@@ -1,0 +1,89 @@
+---
+layout: base.njk
+---
+<section class="hero">
+  <div>
+    <h1>Luís Silva <span>Engineer, maker &amp; tinkerer</span></h1>
+    <p class="tag">I build practical tools, smart-home integrations and open-source projects — IoT, embedded systems, automation and DIY electronics, with hands-on experience in electrical systems repair and installation. Based in Portugal 🇵🇹.</p>
+    <p><a class="btn" href="/cv/">View my CV</a></p>
+  </div>
+  <svg viewBox="0 0 320 400" role="img" aria-label="Electrician on a ladder changing a light bulb">
+    <circle cx="160" cy="215" r="150" fill="#f3efe2"/>
+    <g fill="none" stroke="#efdf9a" stroke-width="2" stroke-linecap="round">
+      <path d="M14 70 H64 L84 90 H120"/><path d="M14 100 H48 L66 118"/><path d="M300 250 H262 L246 268 H214"/><path d="M306 290 H280 L266 304"/>
+    </g>
+    <g fill="#efdf9a"><circle cx="120" cy="90" r="4"/><circle cx="66" cy="118" r="4"/><circle cx="214" cy="268" r="4"/><circle cx="266" cy="304" r="4"/></g>
+    <ellipse cx="160" cy="376" rx="138" ry="15" fill="#e4e0d3"/>
+
+    <!-- ladder -->
+    <g stroke-linecap="round">
+      <g stroke="#9c9ca3" stroke-width="9"><line x1="95" y1="372" x2="128" y2="150"/><line x1="225" y1="372" x2="192" y2="150"/></g>
+      <g stroke="#b8b8bf" stroke-width="5"><line x1="95" y1="372" x2="128" y2="150"/><line x1="225" y1="372" x2="192" y2="150"/></g>
+      <g stroke="#9c9ca3" stroke-width="7">
+        <line x1="100.7" y1="334" x2="219.3" y2="334"/><line x1="108.3" y1="282" x2="211.7" y2="282"/>
+        <line x1="115.9" y1="232" x2="204.1" y2="232"/><line x1="122.7" y1="188" x2="197.3" y2="188"/>
+      </g>
+    </g>
+    <rect x="124" y="144" width="72" height="10" rx="4" fill="#8a8a92"/>
+
+    <!-- light fixture -->
+    <line x1="206" y1="0" x2="206" y2="8" stroke="#1c1c1e" stroke-width="2"/>
+    <rect x="199" y="8" width="14" height="12" rx="2" fill="#1c1c1e"/>
+    <circle cx="206" cy="38" r="36" fill="#ffe27a" opacity=".35"/>
+    <circle cx="206" cy="38" r="14" fill="#fff6c2" stroke="#e0d49a"/>
+
+    <!-- boots + legs -->
+    <rect x="133" y="270" width="25" height="12" rx="4" fill="#1c1c1e"/><rect x="162" y="270" width="25" height="12" rx="4" fill="#1c1c1e"/>
+    <path d="M134 196 h22 l-2 76 h-18 z" fill="#4a4d57"/><path d="M164 196 h22 l-2 76 h-18 z" fill="#3e414a"/>
+
+    <!-- torso -->
+    <path d="M130 124 q0 -12 14 -12 h32 q14 0 14 12 v74 h-60 z" fill="#8b0016"/>
+    <path d="M142 144 h36 v54 h-36 z" fill="#4a4d57"/>
+    <path d="M146 118 v28 M174 118 v28" stroke="#4a4d57" stroke-width="6"/>
+    <rect x="130" y="190" width="60" height="9" fill="#2a2a30"/>
+    <rect x="150" y="160" width="20" height="16" rx="3" fill="#f5a623"/>
+    <path d="M154 166 h12 M154 171 h8" stroke="#fff" stroke-width="1.6" stroke-linecap="round" opacity=".8"/>
+    <rect x="132" y="192" width="14" height="14" rx="3" fill="#2a2a30"/>
+
+    <!-- left arm (down) -->
+    <path d="M136 126 L128 168" stroke="#8b0016" stroke-width="15" stroke-linecap="round"/>
+    <circle cx="127" cy="176" r="7.5" fill="#f0b48a"/>
+    <!-- right arm (up to bulb) -->
+    <path d="M184 128 L206 100" stroke="#8b0016" stroke-width="15" stroke-linecap="round"/>
+    <path d="M206 100 L206 70" stroke="#f0b48a" stroke-width="11" stroke-linecap="round"/>
+    <circle cx="206" cy="58" r="8.5" fill="#2a2a30"/>
+
+    <!-- head -->
+    <rect x="152" y="100" width="16" height="14" rx="4" fill="#e29f74"/>
+    <ellipse cx="160" cy="88" rx="15.5" ry="17.5" fill="#f0b48a"/>
+    <circle cx="154" cy="86" r="1.8" fill="#2a2a30"/><circle cx="166" cy="86" r="1.8" fill="#2a2a30"/>
+    <path d="M154 96 q6 5 12 0" stroke="#7a3e22" stroke-width="1.8" fill="none" stroke-linecap="round"/>
+    <path d="M142 82 a18 18 0 0 1 36 0 z" fill="#8b0016"/>
+    <rect x="138" y="79" width="44" height="6" rx="3" fill="#6e0012"/>
+    <rect x="156" y="66" width="8" height="10" rx="3" fill="#a3122b"/>
+  </svg>
+</section>
+
+<hr class="wire">
+
+<section id="projects">
+  <h2>What I'm working on</h2>
+  <ol class="contents">
+    <li><h3>Energy Tariff Agent</h3><p>Python pipeline that finds the cheapest PT electricity tariff from real consumption.</p></li>
+    <li><h3>RS485 Modbus Meter Bridge</h3><p>ESP32 / ESP-IDF firmware relaying meter data to a solar inverter.</p></li>
+    <li><h3>Home Assistant Smart Home</h3><p>14-view dashboard, HACS custom cards, MCP integration.</p></li>
+    <li><h3>Safety-critical testing</h3><p>Railway and medical-device verification, test automation in Python and C++.</p></li>
+  </ol>
+</section>
+
+<hr class="wire">
+
+<section id="repos">
+  <h2>Open source</h2>
+  <p class="lead">Repositories I wrote myself, on <a href="https://github.com/lui54lb3rt0">GitHub</a>.</p>
+  <ol class="contents">
+    <li><h3><a class="stretch" href="https://github.com/lui54lb3rt0/hass_electricity_best_tarif_PT">Electricity Tariff Analyser (Home Assistant)</a></h3><p>HACS integration that analyses your real consumption and recommends the cheapest Portuguese tariff, using ERSE data.</p></li>
+    <li><h3><a class="stretch" href="https://github.com/lui54lb3rt0/hass_tarifarios_eletricidade_PT">Tarifários Eletricidade PT (Home Assistant)</a></h3><p>HACS integration that syncs ERSE tariff data daily and exposes one sensor per offer.</p></li>
+    <li><h3><a class="stretch" href="https://github.com/lui54lb3rt0/LABSI-SB">Self-Balancing Robot (LABSI)</a></h3><p>ISEP project: two-wheeled stepper robot balanced from gyroscope and accelerometer data.</p></li>
+  </ol>
+</section>

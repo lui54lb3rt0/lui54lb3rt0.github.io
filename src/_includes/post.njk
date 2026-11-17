@@ -1,0 +1,9 @@
+---
+layout: base.njk
+---
+<article class="narrow">
+  <p class="meta">{{ page.date | dateDisplay }}</p>
+  <h1>{{ title }}</h1>
+  {{ content | safe }}
+  <p><a href="/blog/">← All posts</a></p>
+</article>

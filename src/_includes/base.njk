@@ -1,0 +1,56 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>{% if title %}{{ title }} · {% endif %}Luís Silva</title>
+  <meta name="description" content="{{ description or 'IoT, embedded systems, automation and DIY electronics by Luís Silva.' }}">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <header class="top">
+    <nav>
+      <a class="brand" href="/">⚡ Luís Silva</a>
+      <div>
+        <a href="/#projects">Projects</a>
+        <a href="/cv/">CV</a>
+        <a href="https://github.com/lui54lb3rt0">GitHub</a>
+      </div>
+    </nav>
+    <div class="strip">
+      <svg viewBox="0 0 1200 70" width="1200" height="70" aria-hidden="true">
+        <g fill="none" stroke="#d6d0bd" stroke-width="2" stroke-linejoin="round" stroke-linecap="round">
+          <path d="M0 18 H150 l18 18 H340 l18 -18 H548"/>
+          <path d="M0 42 H96 l14 14 H250 l10 -14 H275 l5 -9 l10 18 l10 -18 l10 18 l10 -18 l5 9 H420 l14 14 H548"/>
+          <path d="M652 18 H820 l18 18 H990 l18 -18 H1200"/>
+          <path d="M652 42 H760 l14 14 H900 l14 -14 H1090 l14 14 H1200"/>
+          <path d="M452 18 H500 l14 -8 H548" stroke="#8b0016" opacity=".55"/>
+          <path d="M652 30 H700 l12 -14 H760" stroke="#8b0016" opacity=".55"/>
+        </g>
+        <g fill="#fff" stroke="#8b0016" stroke-width="2">
+          <circle cx="150" cy="18" r="4"/><circle cx="340" cy="18" r="4"/><circle cx="96" cy="42" r="4"/><circle cx="420" cy="42" r="4"/>
+          <circle cx="820" cy="18" r="4"/><circle cx="990" cy="18" r="4"/><circle cx="760" cy="42" r="4"/><circle cx="1090" cy="42" r="4"/>
+          <circle cx="6" cy="18" r="4"/><circle cx="1194" cy="42" r="4"/>
+        </g>
+        <!-- chip -->
+        <g>
+          <rect x="560" y="8" width="80" height="54" rx="5" fill="#fff" stroke="#8b0016" stroke-width="2"/>
+          <circle cx="574" cy="22" r="3.5" fill="#8b0016"/>
+          <g stroke="#8b0016" stroke-width="2" stroke-linecap="round">
+            <path d="M548 18 H560 M548 30 H560 M548 42 H560 M640 18 H652 M640 30 H652 M640 42 H652"/>
+          </g>
+          <path d="M588 44 l6 -14 l6 8 l6 -14 l6 14 l6 -8 l6 14" stroke="#6b3a7d" stroke-width="2" fill="none" stroke-linejoin="round" stroke-linecap="round"/>
+        </g>
+        <!-- LED -->
+        <circle cx="452" cy="18" r="16" fill="#ffe27a" opacity=".4"/>
+        <circle cx="452" cy="18" r="6" fill="#ffd84d" stroke="#8b0016" stroke-width="1.5"/>
+      </svg>
+    </div>
+  </header>
+  <main>{{ content | safe }}</main>
+  <footer>
+    <hr class="wire">
+    <p>© Luís Silva · Made in Portugal 🇵🇹 · Built with Eleventy</p>
+  </footer>
+</body>
+</html>
